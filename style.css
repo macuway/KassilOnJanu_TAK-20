@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    background-color: black;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.week {
+    display: flex;
+    justify-content: space-between;
+}
+
+.day {
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: purple;
+    transition: background-color 300ms ease-in;
+    cursor: pointer;
+    border-radius: 50%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.day:hover {
+    background-color: whitesmoke;
+    color: purple;
+}
+
+.date {
+    font-size: 24px;
+}
+
+.lessons {
+    margin-top: 1rem;
+}
+
+.lesson {
+    height: 4rem;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 0.5rem;
+    background: linear-gradient(90deg, rgba(169,0,173,1) 0%, rgba(121,9,117,1) 35%, rgba(0,212,255,1) 100%);
+    margin: 10px 0;
+    color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.time {
+    font-size: 2rem;
+}
